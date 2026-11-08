@@ -1,0 +1,38 @@
+.page { min-height: 100vh; padding: 2rem; background: radial-gradient(circle at top, rgba(43,127,255,.14), transparent 28%), linear-gradient(180deg,#06111a 0%,#081824 48%,#0b2131 100%); color:#eaf4ff; }
+.hero,.process,.signalSection,.examples,.reminder { width:min(1100px,100%); margin:0 auto 1.5rem; padding:clamp(1.5rem,4vw,3rem); border:1px solid rgba(167,206,244,.14); border-radius:28px; background:rgba(5,18,28,.78); box-shadow:0 30px 90px rgba(0,0,0,.2); }
+.hero { background:radial-gradient(circle at 88% 16%,rgba(122,227,177,.1),transparent 23%),rgba(5,18,28,.8); }
+.eyebrow { margin:0 0 .85rem; color:#86cbff; font-size:.8rem; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+.hero h1,.sectionHeading h2,.reminder h2 { margin:0; color:#f4f8fb; line-height:1.06; }
+.hero h1 { max-width:790px; font-size:clamp(2.5rem,6vw,4.8rem); }
+.hero > p:not(.eyebrow) { max-width:700px; margin:1.35rem 0 0; color:#c2d7e7; font-size:1.08rem; line-height:1.75; }
+.actions { display:flex; flex-wrap:wrap; gap:.85rem; margin-top:1.6rem; }
+.primaryAction,.secondaryAction { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:.85rem 1.1rem; border-radius:999px; font-weight:800; text-decoration:none; transition:transform 160ms ease,box-shadow 160ms ease,border-color 160ms ease,background 160ms ease; }
+.primaryAction { background:#7ae3b1; color:#072031; box-shadow:0 8px 22px rgba(122,227,177,.16); }
+.secondaryAction { border:1px solid rgba(167,206,244,.22); background:rgba(9,29,42,.75); color:#eaf4ff; }
+.primaryAction:hover,.secondaryAction:hover { transform:translateY(-2px); }
+.primaryAction:hover { box-shadow:0 12px 26px rgba(122,227,177,.28); }
+.secondaryAction:hover { border-color:rgba(134,203,255,.58); box-shadow:0 10px 24px rgba(57,169,240,.13); }
+.sectionHeading { max-width:740px; }
+.sectionHeading h2 { font-size:clamp(1.7rem,3vw,2.6rem); }
+.sectionHeading > p:not(.eyebrow) { margin:1rem 0 0; color:#b8ccdb; line-height:1.65; }
+.processFigure { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.75rem; }
+.processStep { position:relative; padding:1.2rem; border:1px solid rgba(134,203,255,.18); border-radius:18px; background:linear-gradient(180deg,rgba(10,28,39,.9),rgba(6,18,28,.88)); transition:transform 160ms ease,border-color 160ms ease,box-shadow 160ms ease; }
+.processStep:hover,.signalCard:hover,.exampleCard:hover { transform:translateY(-3px); border-color:rgba(122,227,177,.38); box-shadow:0 14px 28px rgba(122,227,177,.08); }
+.processStep span { display:grid; place-items:center; width:2.1rem; height:2.1rem; border-radius:50%; background:#7ae3b1; color:#072031; font-weight:900; }
+.processStep h3,.signalCard h3 { margin:1rem 0 .55rem; color:#f4f8fb; font-size:1.15rem; }
+.processStep p,.signalCard p,.exampleCard > p,.reminder > div > p:not(.eyebrow) { margin:0; color:#b8ccdb; line-height:1.6; }
+.processStep i { position:absolute; top:2rem; right:-.9rem; z-index:1; width:.85rem; height:.85rem; border-top:2px solid #7ae3b1; border-right:2px solid #7ae3b1; transform:rotate(45deg); }
+.signalGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:1.7rem; }
+.signalCard,.exampleCard { padding:1.2rem; border:1px solid rgba(134,203,255,.16); border-radius:18px; background:rgba(7,19,29,.78); transition:transform 160ms ease,border-color 160ms ease,box-shadow 160ms ease; }
+.signalNumber,.exampleLabel { color:#7ae3b1; font-size:.78rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+.signalCard strong { color:#dfffee; }
+.actionText { margin-top:.85rem !important; padding-top:.85rem; border-top:1px solid rgba(167,206,244,.12); }
+.exampleGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:1.7rem; }
+.exampleCard blockquote { margin:1rem 0; color:#f4f8fb; font-size:1.2rem; font-weight:700; line-height:1.45; }
+.tagRow { display:flex; flex-wrap:wrap; gap:.45rem; margin-bottom:1rem; }
+.tagRow span { padding:.35rem .55rem; border:1px solid rgba(134,203,255,.2); border-radius:999px; background:rgba(12,34,50,.72); color:#bfddf4; font-size:.74rem; font-weight:800; }
+.reminder { display:flex; align-items:center; justify-content:space-between; gap:2rem; border-color:rgba(122,227,177,.24); background:linear-gradient(135deg,rgba(10,37,42,.88),rgba(6,18,28,.9)); }
+.reminder h2 { max-width:680px; font-size:clamp(1.5rem,3vw,2.15rem); }
+.reminder > div > p:not(.eyebrow) { max-width:680px; margin-top:.8rem; }
+@media (max-width:760px) { .page { padding:1rem; } .processFigure,.signalGrid,.exampleGrid { grid-template-columns:1fr; } .processStep i { display:none; } .reminder { display:grid; gap:1rem; } }
+@media (prefers-reduced-motion:reduce) { .primaryAction,.secondaryAction,.processStep,.signalCard,.exampleCard { transition:none; } .primaryAction:hover,.secondaryAction:hover,.processStep:hover,.signalCard:hover,.exampleCard:hover { transform:none; } }

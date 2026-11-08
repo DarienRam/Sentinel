@@ -1,0 +1,390 @@
+.page {
+  min-height: 100vh;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at top, rgba(43, 127, 255, 0.18), transparent 35%),
+    linear-gradient(135deg, #06131f 0%, #0d2233 45%, #102f45 100%);
+  color: #f4f8fb;
+}
+
+.hero,
+.workflow,
+.impactSection,
+.featureGrid {
+  width: min(1120px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: rgba(6, 19, 31, 0.82);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8dc6ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.8rem, 9vw, 5rem);
+  line-height: 0.95;
+}
+
+.description {
+  max-width: 41rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d7e3ef;
+}
+
+.missionNote {
+  max-width: 42rem;
+  margin-top: 0.9rem;
+  color: #a9c0d3;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.primaryAction,
+.secondaryAction {
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.primaryAction {
+  background: #7ae3b1;
+  color: #072031;
+  box-shadow: 0 10px 22px rgba(122, 227, 177, 0.12);
+}
+
+.secondaryAction {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #f4f8fb;
+}
+
+.primaryAction:hover,
+.primaryAction:focus-visible {
+  background: #9bf0c8;
+  box-shadow: 0 14px 30px rgba(122, 227, 177, 0.26);
+  transform: translateY(-2px);
+}
+
+.secondaryAction:hover,
+.secondaryAction:focus-visible {
+  border-color: rgba(141, 198, 255, 0.72);
+  background: rgba(17, 46, 67, 0.86);
+  box-shadow: 0 12px 28px rgba(50, 141, 255, 0.13);
+  transform: translateY(-2px);
+}
+
+.workflow,
+.impactSection {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: rgba(7, 22, 34, 0.7);
+}
+
+.sectionHeading h2,
+.impactCopy h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+}
+
+.stepGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.stepCard {
+  position: relative;
+  padding: 1.3rem;
+  border: 1px solid rgba(141, 198, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(4, 17, 28, 0.55);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.stepCard:hover {
+  border-color: rgba(122, 227, 177, 0.48);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18), 0 0 24px rgba(122, 227, 177, 0.06);
+  transform: translateY(-3px);
+}
+
+.stepNumber {
+  color: #7ae3b1;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.stepCard h3 {
+  margin: 0.7rem 0 0;
+  font-size: 1rem;
+}
+
+.stepCard p,
+.impactCopy p {
+  margin: 0.7rem 0 0;
+  color: #c5d5e2;
+  line-height: 1.65;
+}
+
+.impactSection {
+  width: min(1420px, 100%);
+  display: grid;
+  grid-template-columns: minmax(340px, 0.82fr) minmax(560px, 1.18fr);
+  gap: 3rem;
+  align-items: center;
+  min-height: 620px;
+  padding: 3rem;
+}
+
+.sourceLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #8dc6ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sourceLink:hover,
+.sourceLink:focus-visible {
+  text-decoration: underline;
+}
+
+.chartCard {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid rgba(122, 227, 177, 0.3);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(14, 47, 55, 0.76), rgba(5, 19, 31, 0.78));
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.chartCard:hover {
+  border-color: rgba(122, 227, 177, 0.5);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18), 0 0 28px rgba(122, 227, 177, 0.05);
+}
+
+.chartSummary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #b4ccdc;
+  font-size: 0.95rem;
+}
+
+.chartSummary strong {
+  color: #7ae3b1;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000 / 310;
+  margin-top: 1.2rem;
+  overflow: visible;
+}
+
+.chartAxis {
+  stroke: rgba(215, 227, 239, 0.42);
+  stroke-width: 0.9;
+}
+
+.chartGuide {
+  stroke: rgba(215, 227, 239, 0.16);
+  stroke-dasharray: 1.8 2;
+  stroke-width: 0.55;
+}
+
+.chartTickLabel,
+.chartYearLabel {
+  fill: #8da8bb;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.chartAxisTitle {
+  fill: #c5d5e2;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.chartLine {
+  fill: none;
+  stroke: #7ae3b1;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chartPoint,
+.chartPointActive {
+  fill: #8dc6ff;
+  stroke: #07131e;
+  stroke-width: 1.4;
+  transition: r 160ms ease, fill 160ms ease;
+}
+
+.chartPointActive {
+  fill: #7ae3b1;
+}
+
+.yearButtons {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.yearButton,
+.yearButtonActive {
+  border: 1px solid rgba(215, 227, 239, 0.18);
+  border-radius: 10px;
+  padding: 0.5rem 0.3rem;
+  background: rgba(3, 16, 27, 0.62);
+  color: #c5d5e2;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.yearButton:hover,
+.yearButton:focus-visible,
+.yearButtonActive {
+  border-color: #7ae3b1;
+  color: #07131e;
+  background: #7ae3b1;
+}
+
+.featureGrid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.featureCard {
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(7, 22, 34, 0.72);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.featureCard:hover {
+  border-color: rgba(141, 198, 255, 0.45);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18), 0 0 24px rgba(76, 157, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.featureTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.featureBody {
+  margin: 0.8rem 0 0;
+  color: #d7e3ef;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 1.25rem;
+  }
+
+  .hero,
+  .workflow,
+  .impactSection {
+    padding: 1.5rem;
+  }
+
+  .stepGrid,
+  .impactSection {
+    grid-template-columns: 1fr;
+  }
+
+  .impactSection {
+    min-height: 0;
+  }
+
+  .chartCard {
+    min-height: 0;
+  }
+
+  .yearButtons {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .yearButtons {
+    gap: 0.25rem;
+  }
+
+  .yearButton,
+  .yearButtonActive {
+    font-size: 0.78rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryAction,
+  .secondaryAction,
+  .stepCard,
+  .chartCard,
+  .featureCard {
+    transition: none;
+  }
+
+  .primaryAction:hover,
+  .primaryAction:focus-visible,
+  .secondaryAction:hover,
+  .secondaryAction:focus-visible,
+  .stepCard:hover,
+  .featureCard:hover {
+    transform: none;
+  }
+}

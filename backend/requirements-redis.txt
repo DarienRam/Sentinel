@@ -1,0 +1,2 @@
+# Optional shared security-state client; Redis server is operator-managed.
+redis==6.4.0

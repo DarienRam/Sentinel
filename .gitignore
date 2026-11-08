@@ -1,0 +1,35 @@
+# Private runtime configuration; publish sanitized examples only
+.env
+.env.*
+!.env.example
+!.env.*.example
+# Databases, sidecars, exports and local research
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+*.sqlite3-*
+*.db.*
+*.sqlite.*
+*.sqlite3.*
+*-wal
+*-shm
+*-journal
+ml/
+backend/private-data/
+backend/model-artifacts/
+# Generated dependencies, builds, reports and caches
+.venv/
+venv/
+node_modules/
+.next/
+out/
+.npm-cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.tsbuildinfo
+*.log
+.DS_Store
